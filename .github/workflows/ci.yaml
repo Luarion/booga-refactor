@@ -23,6 +23,6 @@ jobs:
         with:
           standalone: true
 
-      - run: pnpm install --dev --frozen-lockfile
+      - run: pnpm install --frozen-lockfile
 
       - run: pnpm biome ci .
