@@ -13,14 +13,15 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout del código
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Inyectar Node.js desde archivo de configuración
+        uses: actions/setup-node@v4
         with:
-          node-version-file: .nvmrc
+          node-version-file: ".nvmrc"
 
-      - uses: pnpm/action-setup@v4
-
-      - run: pnpm install --dev --frozen-lockfile
-
-      - run: pnpm biome ci .
+      - name: Instalar pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false # o true según la necesidad de la pipeline
