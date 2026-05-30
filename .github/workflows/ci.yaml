@@ -24,4 +24,4 @@ jobs:
       - name: Instalar pnpm
         uses: pnpm/action-setup@v4
         with:
-          run_install: false # o true según la necesidad de la pipeline
+          standalone: true
