@@ -216,6 +216,12 @@ importers:
       '@commitlint/config-conventional':
         specifier: 21.0.1
         version: 21.0.1
+      '@repo/biomejs':
+        specifier: workspace:*
+        version: link:packages/biomejs
+      '@repo/tsconfig':
+        specifier: workspace:*
+        version: link:packages/tsconfig
       husky:
         specifier: 9.1.7
         version: 9.1.7
@@ -228,6 +234,18 @@ importers:
       nx:
         specifier: 23.0.1
         version: 23.0.1
+
+  packages/biomejs:
+    devDependencies:
+      '@repo/tsconfig':
+        specifier: workspace:*
+        version: link:../tsconfig
+
+  packages/tsconfig:
+    devDependencies:
+      '@repo/biomejs':
+        specifier: workspace:*
+        version: link:../biomejs
 
 packages:
 
