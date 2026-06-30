@@ -7,8 +7,5 @@
 	],
 	"exports": {
 		".": "./biome.json"
-	},
-	"devDependencies": {
-		"@repo/tsconfig": "workspace:*"
 	}
 }
