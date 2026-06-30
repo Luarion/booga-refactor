@@ -1,0 +1,10 @@
+services:
+  environment:
+    image: mcr.microsoft.com/devcontainers/base:ubuntu
+    volumes:
+      - type: bind
+        source: ..
+        target: /workspace
+        read_only: false
+    tty: true
+    stdin_open: true

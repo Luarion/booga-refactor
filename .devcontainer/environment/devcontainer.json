@@ -1,0 +1,9 @@
+{
+	"name": "environment",
+	"dockerComposeFile": "../docker-compose.yml",
+	"service": "environment",
+	"workspaceFolder": "/workspace",
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {}
+	}
+}
