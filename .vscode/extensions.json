@@ -1,4 +1,14 @@
 {
-	"recommendations": ["editorconfig.editorconfig", "biomejs.biome"],
-	"unwantedRecommendations": ["esbenp.prettier-vscode"]
+	"recommendations": [
+		"editorconfig.editorconfig",
+		"biomejs.biome",
+		"ms-azuretools.vscode-containers",
+		"ms-vscode-remote.remote-containers",
+		"ms-azuretools.vscode-docker",
+		"redhat.vscode-yaml"
+	],
+	"unwantedRecommendations": [
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint"
+	]
 }
