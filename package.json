@@ -8,9 +8,10 @@
 			"version": "11.5.3",
 			"onFail": "download"
 		},
-		"node": {
-			"version": ">=22.22.2 <23",
-			"onFail": "error"
+		"runtime": {
+			"name": "node",
+			"version": ">=24.18.0 <26",
+			"onFail": "download"
 		}
 	},
 	"scripts": {
