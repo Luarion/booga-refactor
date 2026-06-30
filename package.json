@@ -1,11 +1,11 @@
 {
 	"name": "booga",
 	"private": true,
-	"packageManager": "pnpm@11.5.0",
+	"packageManager": "pnpm@11.5.3",
 	"devEngines": {
 		"packageManager": {
 			"name": "pnpm",
-			"version": "11.5.0",
+			"version": "11.5.3",
 			"onFail": "download"
 		},
 		"node": {
