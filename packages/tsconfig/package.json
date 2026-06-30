@@ -1,0 +1,8 @@
+{
+	"name": "@repo/tsconfig",
+	"type": "module",
+	"private": true,
+	"devDependencies": {
+		"@repo/biomejs": "workspace:*"
+	}
+}
