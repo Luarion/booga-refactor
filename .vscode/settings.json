@@ -1,6 +1,6 @@
 {
 	"json.schemaDownload.trustedDomains": {
-		"https://biomejs.dev/schemas/2.4.16/schema.json": true
+		"https://biomejs.dev/schemas/": true
 	},
 	"files.exclude": {
 		"node_modules/": true
