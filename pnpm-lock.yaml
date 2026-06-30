@@ -207,9 +207,6 @@ importers:
 
   .:
     devDependencies:
-      '@bazel/bazelisk':
-        specifier: 1.28.1
-        version: 1.28.1
       '@biomejs/biome':
         specifier: 2.4.16
         version: 2.4.16
@@ -238,10 +235,6 @@ packages:
   '@babel/helper-validator-identifier@7.29.7':
     resolution: {integrity: sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg==}
     engines: {node: '>=6.9.0'}
-
-  '@bazel/bazelisk@1.28.1':
-    resolution: {integrity: sha512-K21x83NXOtd0yb2qzjMES3UV4xEWZ1q1vnXFhADA1u7IoiMVQkJAVQRK3oZ5txpnrGafY15HS+YYr2nmsEP4Tg==}
-    hasBin: true
 
   '@biomejs/biome@2.4.16':
     resolution: {integrity: sha512-x9ajFh1zChVybCiM3TN6OD4phAqLgtPZjFrZF+aTMYCPjwBO+k529TX7PPsAqtGNLeV4UgzwQnowEgS7bGmzcA==}
@@ -1166,8 +1159,6 @@ snapshots:
       picocolors: 1.1.1
 
   '@babel/helper-validator-identifier@7.29.7': {}
-
-  '@bazel/bazelisk@1.28.1': {}
 
   '@biomejs/biome@2.4.16':
     optionalDependencies:
