@@ -222,9 +222,6 @@ importers:
       lint-staged:
         specifier: 17.0.5
         version: 17.0.5
-      node:
-        specifier: runtime:>=24.18.0 <26
-        version: 22.23.1
       nx:
         specifier: 23.0.1
         version: 23.0.1
@@ -914,14 +911,6 @@ packages:
 
   minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
-
-  node-bin-setup@1.1.4:
-    resolution: {integrity: sha512-vWNHOne0ZUavArqPP5LJta50+S8R261Fr5SvGul37HbEDcowvLjwdvd0ZeSr0r2lTSrPxl6okq9QUw8BFGiAxA==}
-
-  node@22.23.1:
-    resolution: {integrity: sha512-A4Vkfq69pVXFAKf9EXXGLACe29k15vcp8n0ga23MXMIYri3xePzxZlAcruLWB02WZ5Y95sjky05l8HFPrTAk4g==}
-    engines: {npm: '>=5.0.0'}
-    hasBin: true
 
   npm-run-path@4.0.1:
     resolution: {integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==}
@@ -1783,12 +1772,6 @@ snapshots:
       brace-expansion: 5.0.6
 
   minimist@1.2.8: {}
-
-  node-bin-setup@1.1.4: {}
-
-  node@22.23.1:
-    dependencies:
-      node-bin-setup: 1.1.4
 
   npm-run-path@4.0.1:
     dependencies:
