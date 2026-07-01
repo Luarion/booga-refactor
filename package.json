@@ -20,11 +20,6 @@
 		"lint:fix": "biome check --apply .",
 		"format": "biome format --write ."
 	},
-	"lint-staged": {
-		"*.{js,ts,jsx,tsx,json,jsonc,css,scss,html,md}": [
-			"biome check --write --no-errors-on-unmatched"
-		]
-	},
 	"devDependencies": {
 		"@biomejs/biome": "2.4.16",
 		"@commitlint/cli": "21.0.1",
