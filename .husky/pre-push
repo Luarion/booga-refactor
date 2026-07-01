@@ -1,1 +1,1 @@
-pnpm devcontainer build --no-cache
+pnpm devcontainer build
