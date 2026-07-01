@@ -20,6 +20,7 @@
 		"noUncheckedSideEffectImports": true,
 		"erasableSyntaxOnly": true,
 		"noErrorTruncation": false,
+		"allowJs": false,
 		"paths": {
 			"@/*": ["./src/*"]
 		}
