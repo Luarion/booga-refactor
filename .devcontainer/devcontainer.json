@@ -3,11 +3,11 @@
   "dockerComposeFile": "compose.yaml",
   "service": "environment",
   "workspaceFolder": "/workspace",
-  "updateContentCommand": [
-    "sh",
-    "-c",
-    "corepack enable && pnpm i"
-  ],
+  // "updateContentCommand": [
+  //   "sh",
+  //   "-c",
+  //   "nvm install && corepack enable && pnpm i"
+  // ],
   "features": {
     "ghcr.io/devcontainers/features/git:1": {
       "version": "latest"
