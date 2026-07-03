@@ -1,6 +1,6 @@
 services:
   environment:
-    image: mcr.microsoft.com/devcontainers/base:ubuntu
+    image: mcr.microsoft.com/devcontainers/base:debian
     volumes:
       - type: bind
         source: ..
