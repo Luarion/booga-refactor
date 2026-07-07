@@ -1,1 +1,2 @@
+pnpm validate-branch-name
 pnpm devcontainer build
