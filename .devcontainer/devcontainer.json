@@ -1,35 +1,40 @@
 {
-	"name": "environment",
-	"dockerComposeFile": "compose.yaml",
-	"service": "environment",
-	"workspaceFolder": "/workspace",
-	// "updateContentCommand": [
-	//   "sh",
-	//   "-c",
-	//   "nvm install && corepack enable && pnpm i"
-	// ],
-	"features": {
-		"ghcr.io/devcontainers/features/git:1": {
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers/features/rust:1": {
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers/features/node:2.1.0": {
-			"version": "none",
-			"pnpmVersion": "none"
-		}
-	},
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"editorconfig.editorconfig",
-				"biomejs.biome",
-				"ms-azuretools.vscode-containers",
-				"ms-vscode-remote.remote-containers",
-				"ms-azuretools.vscode-docker",
-				"redhat.vscode-yaml"
-			]
-		}
-	}
+  "name": "environment",
+  "dockerComposeFile": "compose.yaml",
+  "service": "environment",
+  "workspaceFolder": "/workspace",
+  "containerEnv": {
+    "COREPACK_ENABLE_DOWNLOAD_PROMPT": "0"
+  },
+  "onCreateCommand": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
+  "updateContentCommand": [
+    "/bin/bash",
+    "-i",
+    "-c",
+    "nvm install && corepack enable && pnpm i"
+  ],
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/rust:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/node:2.1.0": {
+      "version": "none",
+      "pnpmVersion": "none"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "editorconfig.editorconfig",
+        "biomejs.biome",
+        "ms-azuretools.vscode-containers",
+        "ms-vscode-remote.remote-containers",
+        "ms-azuretools.vscode-docker",
+        "redhat.vscode-yaml"
+      ]
+    }
+  }
 }
