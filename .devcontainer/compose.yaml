@@ -6,5 +6,6 @@ services:
         source: ..
         target: /workspace
         read_only: false
+        consistency: cached
     tty: true
     stdin_open: true
