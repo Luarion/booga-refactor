@@ -1,3 +1,5 @@
-pnpm store status && pnpm install --frozen-lockfile
+pnpm store status
+pnpm install --frozen-lockfile
+pnpm audit --audit-level critical
 pnpm validate-branch-name
 pnpm devcontainer build
