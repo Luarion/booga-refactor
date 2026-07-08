@@ -16,7 +16,7 @@
 	},
 	"scripts": {
 		"prepare": "husky",
-		"lint": "biome check .",
+		"lint": "biome check; yamllint **/*.yaml",
 		"lint:fix": "biome check --apply .",
 		"format": "biome format --write ."
 	},
@@ -29,6 +29,6 @@
 		"lint-staged": "17.0.5",
 		"nx": "23.0.1",
 		"validate-branch-name": "1.3.2",
-		"yaml-lint": "^1.7.0"
+		"yaml-lint": "1.7.0"
 	}
 }

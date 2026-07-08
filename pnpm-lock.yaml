@@ -232,7 +232,7 @@ importers:
         specifier: 1.3.2
         version: 1.3.2(typescript@6.0.3)
       yaml-lint:
-        specifier: ^1.7.0
+        specifier: 1.7.0
         version: 1.7.0
 
 packages:
