@@ -5,7 +5,8 @@
 		"ms-azuretools.vscode-containers",
 		"ms-vscode-remote.remote-containers",
 		"ms-azuretools.vscode-docker",
-		"redhat.vscode-yaml"
+		"redhat.vscode-yaml",
+		"bufbuild.vscode-buf"
 	],
 	"unwantedRecommendations": [
 		"esbenp.prettier-vscode",
