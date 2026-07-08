@@ -4,11 +4,13 @@
 	},
 	"files.exclude": {
 		"**/node_modules/": true,
-		"**/.pnpm-store/": true
+		"**/.pnpm-store/": true,
+		".husky/_": true
 	},
 	"search.exclude": {
 		"**/node_modules/": true,
-		"**/.pnpm-store/": true
+		"**/.pnpm-store/": true,
+		".husky/_": true
 	},
 	"editor.formatOnSave": true,
 	"editor.formatOnSaveMode": "file",
