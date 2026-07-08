@@ -1,7 +1,7 @@
 node_modules/
 dist/
 *.tsbuildinfo
-.pnpm-store
+.pnpm-store/
 
 .nx/cache
 .nx/workspace-data
