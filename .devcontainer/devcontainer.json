@@ -7,12 +7,7 @@
 		"COREPACK_ENABLE_DOWNLOAD_PROMPT": "0"
 	},
 	"onCreateCommand": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
-	"updateContentCommand": [
-		"/bin/bash",
-		"-i",
-		"-c",
-		"nvm install && corepack enable && pnpm i"
-	],
+	"updateContentCommand": ["/bin/bash", "-i", "-c", "pnpm i --frozen-lockfile"],
 	"features": {
 		"ghcr.io/devcontainers/features/git:1.3.8": {
 			"version": "latest"
@@ -21,8 +16,8 @@
 			"version": "latest"
 		},
 		"ghcr.io/devcontainers/features/node:2.1.0": {
-			"version": "none",
-			"pnpmVersion": "none"
+			"version": "latest",
+			"pnpmVersion": "latest"
 		},
 		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
 			"version": "latest",

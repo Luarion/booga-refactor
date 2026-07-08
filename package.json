@@ -1,17 +1,16 @@
 {
 	"name": "booga",
 	"private": true,
-	"packageManager": "pnpm@11.5.3",
 	"devEngines": {
 		"packageManager": {
 			"name": "pnpm",
-			"version": "11.5.3",
+			"version": "11.10.0",
 			"onFail": "download"
 		},
 		"runtime": {
 			"name": "node",
-			"version": ">=24.18.0 <26",
-			"onFail": "ignore"
+			"version": ">=26 <27",
+			"onFail": "download"
 		}
 	},
 	"scripts": {
