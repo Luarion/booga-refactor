@@ -1,6 +1,7 @@
 {
 	"json.schemaDownload.trustedDomains": {
-		"https://biomejs.dev/schemas/": true
+		"https://biomejs.dev/schemas/": true,
+		"https://aka.ms/": true
 	},
 	"files.exclude": {
 		"**/node_modules/": true,
