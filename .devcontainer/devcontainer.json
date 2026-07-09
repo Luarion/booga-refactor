@@ -6,7 +6,7 @@
 	"containerEnv": {
 		"COREPACK_ENABLE_DOWNLOAD_PROMPT": "0"
 	},
-	"onCreateCommand": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
+	"onCreateCommand": "pnpm reset",
 	"updateContentCommand": ["/bin/bash", "-i", "-c", "pnpm i --frozen-lockfile"],
 	"features": {
 		"ghcr.io/devcontainers/features/git:1.3.8": {
