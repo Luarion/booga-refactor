@@ -18,7 +18,8 @@
 		"lint": "biome check; yamllint **/*.yaml",
 		"lint:fix": "biome check --apply .",
 		"format": "biome format --write .",
-		"clean": "git clean -fdX"
+		"clean": "git clean -fdX -e '*.env'",
+		"reset": "pnpm clean && pnpm i --frozen-lockfile"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.4.16",
