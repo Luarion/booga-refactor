@@ -21,6 +21,7 @@ pre-push:
 
     - name: devcontainer
       run: pnpm devcontainer build
+      glob: ".devcontainer/**"
 
 post-checkout:
   jobs:
