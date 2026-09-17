@@ -13,7 +13,7 @@ pre-push:
   parallel: true
   commands:
     branch-name:
-      run: git branch --show-current | grep -Eq '^(main|(feature|fix|chore)\/[a-z0-9-]+)$'
+      run: git branch --show-current | grep -Eq '^(main|develop|(feat|fix|chore)\/[a-z0-9-]+)$'
 
   jobs:
     - name: validate-branch-name
