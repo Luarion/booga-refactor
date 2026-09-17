@@ -1,2 +1,0 @@
-pattern: "^(main|develop)$|^(feature|fix|chore|docs|refactor)/[a-zA-Z0-9-]+$"
-errorMsg: "Error: Invalid branch name."

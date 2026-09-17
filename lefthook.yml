@@ -11,6 +11,10 @@ pre-commit:
 
 pre-push:
   parallel: true
+  commands:
+    branch-name:
+      run: git branch --show-current | grep -Eq '^(main|(feature|fix|chore)\/[a-z0-9-]+)$'
+
   jobs:
     - name: validate-branch-name
       run: git rev-parse --verify --quiet @{u} >/dev/null || pnpm validate-branch-name # Checks if branch has remote
