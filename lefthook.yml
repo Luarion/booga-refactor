@@ -20,7 +20,7 @@ pre-push:
       run: pnpm audit --audit-level critical
 
     - name: devcontainer
-      run: pnpm devcontainer build
+      run: pnpm devcontainer build {staged_files}
       glob: ".devcontainer/**"
 
 post-checkout:
