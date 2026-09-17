@@ -3,9 +3,9 @@
 	"dockerComposeFile": "compose.yaml",
 	"service": "environment",
 	"workspaceFolder": "/workspace",
-	"containerEnv": {
-		"COREPACK_ENABLE_DOWNLOAD_PROMPT": "0"
-	},
+	// "containerEnv": {
+	// 	"COREPACK_ENABLE_DOWNLOAD_PROMPT": "0"
+	// },
 	"onCreateCommand": "pnpm reset",
 	"updateContentCommand": ["/bin/bash", "-i", "-c", "pnpm i --frozen-lockfile"],
 	"features": {
