@@ -16,9 +16,6 @@ pre-push:
       run: git branch --show-current | grep -Eq '^(main|develop|(feat|fix|chore)\/[a-z0-9-]+)$'
 
   jobs:
-    - name: validate-branch-name
-      run: git rev-parse --verify --quiet @{u} >/dev/null || pnpm validate-branch-name # Checks if branch has remote
-
     - name: audit
       run: pnpm audit --audit-level critical
 
