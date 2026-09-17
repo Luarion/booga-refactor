@@ -2,5 +2,6 @@ packages:
   - "packages/*"
   - "apps/*"
 allowBuilds:
+  lefthook: true
   node: true
   nx: true

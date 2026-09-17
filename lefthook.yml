@@ -1,0 +1,27 @@
+commit-msg:
+  jobs:
+    - name: commitlint
+      run: pnpm commitlint --edit {1}
+
+pre-commit:
+  parallel: true
+  jobs:
+    - run: pnpm biome check --write --no-errors-on-unmatched {staged_files}
+      glob: "*.{js,mjs,cjs,ts,jsx,tsx,json,jsonc,css,scss,html,md}"
+
+pre-push:
+  parallel: true
+  jobs:
+    - name: validate-branch-name
+      run: git rev-parse --verify --quiet @{u} >/dev/null || pnpm validate-branch-name # Checks if branch has remote
+
+    - name: audit
+      run: pnpm audit --audit-level critical
+
+    - name: devcontainer
+      run: pnpm devcontainer build
+
+post-checkout:
+  jobs:
+    - name: install
+      run: pnpm i --frozen-lockfile
