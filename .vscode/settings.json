@@ -1,8 +1,11 @@
 {
+	// Schema
 	"json.schemaDownload.trustedDomains": {
 		"https://biomejs.dev/schemas/": true,
 		"https://aka.ms/": true
 	},
+
+	// Exclusions
 	"files.exclude": {
 		"**/node_modules/": true,
 		"**/.pnpm-store/": true,
@@ -13,12 +16,16 @@
 		"**/.pnpm-store/": true,
 		".husky/_": true
 	},
+
+	// Save
 	"editor.formatOnSave": true,
 	"editor.formatOnSaveMode": "file",
 	"editor.codeActionsOnSave": {
 		"source.organizeImports.biome": "explicit",
 		"source.fixAll.biome": "explicit"
 	},
+
+	// Formatters
 	"[javascript]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
