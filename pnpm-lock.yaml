@@ -179,7 +179,7 @@ importers:
         specifier: 0.89.0
         version: 0.89.0
       lefthook:
-        specifier: ^2.1.14
+        specifier: 2.1.14
         version: 2.1.14
       nx:
         specifier: 23.2.1
