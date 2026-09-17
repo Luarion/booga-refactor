@@ -19,7 +19,7 @@
 			"version": "latest",
 			"pnpmVersion": "latest"
 		},
-		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1.10.1": {
 			"version": "latest",
 			"moby": false,
 			"installDockerBuildx": true,
