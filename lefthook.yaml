@@ -12,6 +12,10 @@ pre-commit:
     - glob: "*compose*.y*ml"
       run: for f in {staged_files}; do docker compose -f "$f" config -q; done
 
+    - name: yaml
+      glob: "*.{yaml,yml}"
+      run: pnpm yamllint {staged_files}
+
 pre-push:
   parallel: true
   commands:
