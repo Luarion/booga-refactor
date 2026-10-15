@@ -9,12 +9,14 @@
 	"files.exclude": {
 		"**/node_modules/": true,
 		"**/.pnpm-store/": true,
-		"**/devcontainer-lock.json": true
+		"**/devcontainer-lock.json": true,
+		"**/pnpm-lock.yaml": true
 	},
 	"search.exclude": {
 		"**/node_modules/": true,
 		"**/.pnpm-store/": true,
-		"**/devcontainer-lock.json": true
+		"**/devcontainer-lock.json": true,
+		"**/pnpm-lock.yaml": true
 	},
 
 	// save
