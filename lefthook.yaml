@@ -9,6 +9,9 @@ pre-commit:
     - run: pnpm biome check --write --no-errors-on-unmatched {staged_files}
       glob: "*.{js,mjs,cjs,ts,jsx,tsx,json,jsonc,css,scss,html,md}"
 
+    - glob: "*compose*.y*ml"
+      run: for f in {staged_files}; do docker compose -f "$f" config -q; done
+
 pre-push:
   parallel: true
   commands:
