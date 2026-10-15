@@ -6,14 +6,13 @@ commit-msg:
 pre-commit:
   parallel: true
   jobs:
-    - run: pnpm biome check --write --no-errors-on-unmatched {staged_files}
-      glob: "*.{js,mjs,cjs,ts,jsx,tsx,json,jsonc,css,scss,html,md}"
+    - glob: "*.{js,mjs,cjs,ts,jsx,tsx,json,jsonc,css,scss,html,md}"
+      run: pnpm biome check --write --no-errors-on-unmatched {staged_files}
 
     - glob: "*compose*.y*ml"
       run: for f in {staged_files}; do docker compose -f "$f" config -q; done
 
-    - name: yaml
-      glob: "*.{yaml,yml}"
+    - glob: "*.{yaml,yml}"
       run: pnpm yamllint {staged_files}
 
 pre-push:
