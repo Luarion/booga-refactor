@@ -8,13 +8,11 @@
 	// Exclusions
 	"files.exclude": {
 		"**/node_modules/": true,
-		"**/.pnpm-store/": true,
-		".husky/_": true
+		"**/.pnpm-store/": true
 	},
 	"search.exclude": {
 		"**/node_modules/": true,
-		"**/.pnpm-store/": true,
-		".husky/_": true
+		"**/.pnpm-store/": true
 	},
 
 	// Save
