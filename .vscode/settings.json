@@ -8,11 +8,13 @@
 	// Exclusions
 	"files.exclude": {
 		"**/node_modules/": true,
-		"**/.pnpm-store/": true
+		"**/.pnpm-store/": true,
+		"**/devcontainer-lock.json": true
 	},
 	"search.exclude": {
 		"**/node_modules/": true,
-		"**/.pnpm-store/": true
+		"**/.pnpm-store/": true,
+		"**/devcontainer-lock.json": true
 	},
 
 	// Save
