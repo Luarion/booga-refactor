@@ -9,8 +9,7 @@
 	"files.exclude": {
 		"**/node_modules/": true,
 		"**/.pnpm-store/": true,
-		"**/devcontainer-lock.json": true,
-		"**/pnpm-lock.yaml": true
+		"**/*-lock.{json,yaml}": true
 	},
 	"files.watcherExclude": {
 		".git/objects/**": true,
@@ -25,8 +24,7 @@
 	"search.exclude": {
 		"**/node_modules/": true,
 		"**/.pnpm-store/": true,
-		"**/devcontainer-lock.json": true,
-		"**/pnpm-lock.yaml": true
+		"**/*-lock.{json,yaml}": true
 	},
 
 	// save
