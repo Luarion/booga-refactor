@@ -21,11 +21,6 @@
 		"**/node_modules/": true,
 		"**/.pnpm-store/": true
 	},
-	"search.exclude": {
-		"**/node_modules/": true,
-		"**/.pnpm-store/": true,
-		"**/*-lock.{json,yaml}": true
-	},
 
 	// save
 	"editor.formatOnSave": true,
