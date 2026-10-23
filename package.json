@@ -12,8 +12,8 @@
 		}
 	},
 	"scripts": {
-		"lint": "biome check; yamllint **/*.yaml",
-		"lint:fix": "biome check --apply .",
+		"lint": "biome check",
+		"lint:fix": "biome check --write .",
 		"format": "biome format --write .",
 		"clean": "git clean -fdX -e '*.env'",
 		"reset": "pnpm clean && pnpm i --frozen-lockfile"
@@ -24,7 +24,6 @@
 		"@commitlint/config-conventional": "21.2.4",
 		"@devcontainers/cli": "0.89.0",
 		"lefthook": "2.2.2",
-		"nx": "24.0.0",
-		"yaml-lint": "1.7.0"
+		"nx": "24.0.0"
 	}
 }
