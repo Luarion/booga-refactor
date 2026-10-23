@@ -12,7 +12,7 @@
 		"ghcr.io/devcontainers/features/rust:1.6.0": {
 			"version": "latest"
 		},
-		"ghcr.io/devcontainers/features/node:2.1.0": {
+		"ghcr.io/devcontainers/features/node:2.1.1": {
 			"version": "latest",
 			"pnpmVersion": "latest"
 		},
