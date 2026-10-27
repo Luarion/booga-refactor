@@ -9,11 +9,16 @@
 	"files.exclude": {
 		"**/node_modules/": true,
 		"**/.pnpm-store/": true,
-		"**/*-lock.{json,yaml}": true
+		"**/*-lock.{json,yaml}": true,
+		"**/*.lock": true
 	},
 	"files.watcherExclude": {
 		"**/node_modules/": true,
-		"**/.pnpm-store/": true
+		"**/.pnpm-store/": true,
+		"**/*-lock.{json,yaml}": true,
+		"**/*.lock": true,
+		"**/tmp/": true,
+		"**/target/": true
 	},
 
 	// save
