@@ -1,12 +1,16 @@
 {
 	"$schema": "https://opencode.ai/config.json",
 	"lsp": true,
-	"permission": {
-		"edit": {
-			"*": "allow"
+	"permissions": [
+		{
+			"action": "edit",
+			"resource": "*",
+			"effect": "allow"
 		},
-		"bash": {
-			"*": "ask"
+		{
+			"action": "shell",
+			"resource": "*",
+			"effect": "ask"
 		}
-	}
+	]
 }
