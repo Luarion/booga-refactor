@@ -2,7 +2,9 @@
 	// schema
 	"json.schemaDownload.trustedDomains": {
 		"https://biomejs.dev/schemas/": true,
-		"https://aka.ms/": true
+		"https://aka.ms/": true,
+		"https://opencode.ai/": true,
+		"https://models.dev/": true
 	},
 
 	// exclusions
