@@ -63,7 +63,7 @@
 		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"[yaml]": {
-		"editor.defaultFormatter": "redhat.vscode-yaml"
+		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"[dockercompose]": {
 		"editor.defaultFormatter": "ms-azuretools.vscode-containers"
